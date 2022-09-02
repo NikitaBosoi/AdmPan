@@ -1,0 +1,282 @@
+<html><head>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+    
+        <link href="/css/dist/main-theme.min.css" rel="stylesheet">
+        <script src="/js/dist/app.min.js"></script>
+    
+    <title>Панель управления</title>
+</head>
+<body>
+    <div class="preloader-background" style="display: none;">
+    <div class="preloader-wrapper big active" style="display: none;">
+        <div class="spinner-layer">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a data-activates="slide-out" class="button-collapse hide-on-large"><i class="material-icons">menu</i></a>
+                    <a class="brand-logo" href="/">KateMedia</a>
+                    <ul id="nav-mobile" class="right">
+                        <li class="user-nav-btn hide-on-med-and-down">
+                            <a class="dropdown-button" data-activates="user-dropdown" data-beloworigin="true">
+                                <img class="circle bordered small-avatar" src="https://km-dev-be-data.s3.eu-west-1.amazonaws.com/user-files/2f211eda-0d69-449f-8141-60a91ac0bd2f/small_14cf0e2f98a14ef6ab2fb2ceb666d7ed.jpg?X-Amz-Expires=28800&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATAPV7GDZWZFLGA5U/20220902/eu-west-1/s3/aws4_request&amp;X-Amz-Date=20220902T141900Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=165db27a2fdd9b51b967e5269280a3aa988066a4b9c2fd304fbda9c447a9330c">
+                                <span class="name">Никита Босой</span>
+                            </a><ul id="user-dropdown" class="dropdown-content">
+                    <li>
+                        <a href="/User/Details"><i class="material-icons hide-on-med-and-down">account_circle</i> Профиль</a>
+                    </li>
+                    <li>
+                        <a href="/Account/ChangePassword"><i class="material-icons hide-on-med-and-down">lock_open</i> Изменить пароль</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="materialize-red-text" href="/Account/Logout"><i class="material-icons  hide-on-med-and-down">exit_to_app</i> Выйти</a>
+                    </li>
+                </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <ul id="slide-out" class="side-nav fixed" style="width: 320px; transform: translateX(0px);">
+    <li class="hide-on-large-only">
+        <div class="user-view">
+            <div class="background">
+            </div>
+            <a>
+                <img class="circle bordered small-avatar" src="https://km-dev-be-data.s3.eu-west-1.amazonaws.com/user-files/2f211eda-0d69-449f-8141-60a91ac0bd2f/small_14cf0e2f98a14ef6ab2fb2ceb666d7ed.jpg?X-Amz-Expires=28800&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATAPV7GDZWZFLGA5U/20220902/eu-west-1/s3/aws4_request&amp;X-Amz-Date=20220902T141900Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=165db27a2fdd9b51b967e5269280a3aa988066a4b9c2fd304fbda9c447a9330c">
+            </a>
+            <a>
+                <span class="name">Никита Босой</span>
+            </a>
+            <a>
+                <span class="email">nikita.bosoi@katemedia.eu</span>
+            </a>
+        </div>
+    </li>
+    <li>
+        <a class="truncate" href="/Customers">
+            <i class="material-icons">local_mall</i>Управление клиентами
+        </a>
+    </li>
+    <li>
+        <a class="truncate" href="/Restaurants">
+            <i class="material-icons">restaurant</i>Управление ресторанами
+        </a>
+    </li>
+    <li>
+        <a class="truncate" href="/Categories">
+            <i class="material-icons">list</i>Управление категориями
+        </a>
+    </li>
+    <li>
+        <a class="truncate" href="/SubCategories">
+            <i class="material-icons">filter_list</i>Управление подкатегориями
+        </a>
+    </li>
+    <li>
+        <a class="truncate" href="/Menu">
+            <i class="material-icons">restaurant_menu</i>Управление меню
+        </a>
+    </li>
+        <li>
+            <a class="truncate" href="/ComboGroups">
+                <i class="material-icons">list_alt</i>Управление комбо группами
+            </a>
+        </li>
+    <li>
+        <a class="truncate" href="/ModifierGroups">
+            <i class="material-icons">list_alt</i>Управление группами модификаторов
+        </a>
+    </li>
+    <li>
+        <a class="truncate" href="/Modifiers">
+            <i class="material-icons">set_meal</i>Управление модификаторами
+        </a>
+    </li>
+    <li>
+        <a class="truncate" href="/Users">
+            <i class="material-icons">account_circle</i>Управление пользователями
+        </a>
+    </li>
+    <li>
+            <a class="truncate" href="/Teasers">
+                <i class="material-icons">video_library</i>Управление тизерами
+            </a>
+        </li>
+    <li>
+        <a class="truncate" href="/Orders">
+            <i class="material-icons">assignment</i>Управление заказами
+        </a>
+    </li>
+    <li>
+        <a class="truncate" href="/Games">
+            <i class="material-icons">games</i>Управление играми
+        </a>
+    </li>
+    <li>
+        <a class="truncate" href="/Devices">
+            <i class="material-icons">devices</i>Управление устройствами
+        </a>
+    </li>
+    <li>
+        <a class="truncate" href="/Firmwares">
+            <i class="material-icons">android</i>Управление прошивкой
+        </a>
+    </li>
+    <li>
+        <a class="truncate" href="/TabletApps">
+            <i class="material-icons">apps</i>Управление планшетными приложениями
+        </a>
+    </li>
+
+    <li class="divider"></li>
+    <li class="log-out">
+        <a href="/Account/Logout">
+            <i class="material-icons">exit_to_app</i>Выйти
+        </a>
+    </li>
+</ul>
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                        <div class="col s12">
+                            <div class="section">
+                                <h2 class="breadcrumb-title hide-on-small-only">Панель управления</h2>
+                                
+
+<div class="row">
+
+<div class="col s12 m4">
+    <a class="card hoverable info-card dashboard-card small-card " href="/Menu">
+        <div class="card-content">
+            <span class="">
+                <i class="material-icons inline-icons">restaurant_menu</i>
+                Управление меню
+                <text class="right"></text>
+            </span>
+        </div>
+    </a>
+</div>
+</div>
+
+<div class="row">
+
+<div class="col s12 m6">
+    <a class="card hoverable primary-card dashboard-card  " href="/Users">
+        <div class="card-content">
+            <span class="flow-text">
+                <i class="material-icons inline-icons">account_circle</i>
+                Пользователи
+                <text class="right">65</text>
+            </span>
+        </div>
+    </a>
+</div>
+
+<div class="col s12 m6">
+    <a class="card hoverable warning-card dashboard-card  " href="/Customers">
+        <div class="card-content">
+            <span class="flow-text">
+                <i class="material-icons inline-icons">local_mall</i>
+                Клиенты
+                <text class="right">37</text>
+            </span>
+        </div>
+    </a>
+</div>
+
+<div class="col s12 m6">
+    <a class="card hoverable info-card dashboard-card  " href="/Restaurants">
+        <div class="card-content">
+            <span class="flow-text">
+                <i class="material-icons inline-icons">restaurant</i>
+                Рестораны
+                <text class="right">43</text>
+            </span>
+        </div>
+    </a>
+</div>
+
+<div class="col s12 m6">
+    <a class="card hoverable success-card dashboard-card  " href="/Categories">
+        <div class="card-content">
+            <span class="flow-text">
+                <i class="material-icons inline-icons">list</i>
+                Категории
+                <text class="right">458</text>
+            </span>
+        </div>
+    </a>
+</div>
+</div>
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row valign-wrapper">
+                <div class="col s12 m6 left">
+                    <span class="left">©  2022 KateMedia</span>
+                </div>
+                <div class="col s12 m3 right">
+                    <form method="post" action="/Account/SetLanguage?returnUrl=%2F">
+                        <div class="input-field">
+                            <i class="material-icons prefix">language</i>
+                            <div class="select-wrapper revers-select"><span class="caret">▼</span><input type="text" class="select-dropdown" readonly="true" data-activates="select-options-5117be54-40e1-317d-2194-155db363f6cd" value="ru (RU)"><ul id="select-options-5117be54-40e1-317d-2194-155db363f6cd" class="dropdown-content select-dropdown "><li class=""><span>en (US)</span></li><li class=""><span>de (DE)</span></li><li class=""><span>ru (RU)</span></li><li class=""><span>uk (UA)</span></li></ul><select onchange="this.form.submit();" class="revers-select initialized" name="culture" data-val="true" data-val-required="The Name field is required." id="Name" data-select-id="5117be54-40e1-317d-2194-155db363f6cd"><option value="en-US">en (US)</option>
+<option value="de-DE">de (DE)</option>
+<option selected="selected" value="ru-RU">ru (RU)</option>
+<option value="uk-UA">uk (UA)</option>
+</select></div>
+                        </div>
+                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CMoJlywRFpMtQR6rHxA_lfeoUvYkh7DyIuPlFjs3MwGHg2dDVq-nTKIpataKkCCPbdoKmjvrJSlQ-c8t9EGmOPHjklg4RrC2dvFxJQ15rLtDjHq-3Bd290ZauS49UH82Nha7grwwpF7LDxebvZW5dKeuzCJiNNLPgBUMdOhnjNH6FBS1ReX3YKfL0f8wrZmKQ"></form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(function () {
+            $.ajax({
+                type: 'GET',
+                url: '/User/GetAvatar',
+                success: function (output) {
+                    if (output.fileUrl)
+                        $(".small-avatar").attr('src', output.fileUrl);
+                },
+                error: function (output) {
+                    NotificationService.notifyError(output);
+                }
+            });
+        });
+    </script>
+    
+
+
+
+
+    
+
+
+<div class="hiddendiv common"></div><div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
