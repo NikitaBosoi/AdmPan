@@ -43,8 +43,8 @@ public class LoginPage {
     }
 
     public void login(){
-        setEmailInEmailField("nikita.bosoi@katemedia.eu");
-        setPasswordField("123456");
+        setEmailInEmailField("");
+        setPasswordField("");
         clickLoginButton();
     }
 }
